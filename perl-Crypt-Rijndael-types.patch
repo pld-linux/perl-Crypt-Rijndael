@@ -1,0 +1,16 @@
+--- Crypt-Rijndael-0.05/rijndael.h.orig	2001-09-17 10:52:05.000000000 +0200
++++ Crypt-Rijndael-0.05/rijndael.h	2004-04-25 19:04:50.733851005 +0200
+@@ -25,10 +25,11 @@
+ #if !defined(RIJNDAEL_H)
+ #define RIJNDAEL_H
+ 
++#include <stdint.h>
+ #include <stdlib.h>
+ 
+-typedef unsigned long UINT32;
+-typedef unsigned char UINT8;
++typedef uint32_t UINT32;
++typedef uint8_t UINT8;
+ 
+ /* Other block sizes and key lengths are possible, but in the context of
+  * the ssh protocols, 256 bits is the default. */
