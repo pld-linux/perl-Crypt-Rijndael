@@ -9,12 +9,13 @@ Summary:	Crypt::Rijndael Perl module - Rijndael encryption algorithm
 Summary(pl):	Modu³ Perla Crypt::Rijndael - algorytm szyfrowania Rijndael
 Name:		perl-Crypt-Rijndael
 Version:	0.05
-Release:	3
+Release:	4
 License:	LGPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	af8628fee8648f26c94916ef8edf32d9
-BuildRequires:	perl-devel >= 5.6
+Patch0:		%{name}-types.patch
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -29,6 +30,7 @@ szyfrowania (AES).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
