@@ -6,7 +6,7 @@
 %define		pdir	Crypt
 %define		pnam	Rijndael
 Summary:	Crypt::Rijndael Perl module - Rijndael encryption algorithm
-Summary(pl):	Modu≥ Perla Crypt::Rijndael - algorytm szyfrowania Rijndael
+Summary(pl.UTF-8):   Modu≈Ç Perla Crypt::Rijndael - algorytm szyfrowania Rijndael
 Name:		perl-Crypt-Rijndael
 Version:	0.05
 Release:	4
@@ -23,9 +23,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This module is Crypt::CBC compliant Rijndael cipher implementation.
 Rijndael has just been selected as the Advanced Encryption Standard.
 
-%description -l pl
-Ten modu≥ jest zgodn± z Crypt::CBC implementacj± szyfru Rijndael.
-Rijndael zosta≥ niedawno wybrany jako standard zaawansowanego
+%description -l pl.UTF-8
+Ten modu≈Ç jest zgodnƒÖ z Crypt::CBC implementacjƒÖ szyfru Rijndael.
+Rijndael zosta≈Ç niedawno wybrany jako standard zaawansowanego
 szyfrowania (AES).
 
 %prep
