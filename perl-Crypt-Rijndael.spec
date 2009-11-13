@@ -13,7 +13,7 @@ Release:	1
 # included COPYING contains LGPL v2, but README and module source says GPL
 License:	GPL
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/B/BD/BDFOY/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	61b2ebf10194b1f94f14d999cf68f5f9
 Patch0:		%{name}-types.patch
 URL:		http://search.cpan.org/dist/Crypt-Rijndael/
