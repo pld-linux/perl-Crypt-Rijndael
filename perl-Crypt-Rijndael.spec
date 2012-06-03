@@ -10,17 +10,17 @@ Summary(pl.UTF-8):	Moduł Perla Crypt::Rijndael - algorytm szyfrowania Rijndael
 Name:		perl-Crypt-Rijndael
 Version:	1.09
 Release:	1
-# included COPYING contains LGPL v2, but README and module source says GPL
-License:	GPL
+License:	LGPL v2+
 Group:		Development/Languages/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/B/BD/BDFOY/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	6a2678fbd7a0c9ed277d4b758a530b1c
 Patch0:		%{name}-types.patch
 URL:		http://search.cpan.org/dist/Crypt-Rijndael/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(Test::Manifest) >= 1.14
+BuildRequires:	perl-Test-Manifest >= 1.14
+BuildRequires:	perl-Test-Simple
 %endif
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -58,8 +58,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes NEWS README
-%{perl_vendorarch}/Crypt/*.pm
+%{perl_vendorarch}/Crypt/Rijndael.pm
 %dir %{perl_vendorarch}/auto/Crypt/Rijndael
-%{perl_vendorarch}/auto/Crypt/Rijndael/*.bs
-%attr(755,root,root) %{perl_vendorarch}/auto/Crypt/Rijndael/*.so
-%{_mandir}/man3/*
+%{perl_vendorarch}/auto/Crypt/Rijndael/Rijndael.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Crypt/Rijndael/Rijndael.so
+%{_mandir}/man3/Crypt::Rijndael.3*
