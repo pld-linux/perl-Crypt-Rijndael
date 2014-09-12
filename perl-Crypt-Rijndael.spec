@@ -60,6 +60,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes NEWS README
 %{perl_vendorarch}/Crypt/Rijndael.pm
 %dir %{perl_vendorarch}/auto/Crypt/Rijndael
-%{perl_vendorarch}/auto/Crypt/Rijndael/Rijndael.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Crypt/Rijndael/Rijndael.so
 %{_mandir}/man3/Crypt::Rijndael.3*
