@@ -8,12 +8,12 @@
 Summary:	Crypt::Rijndael Perl module - Rijndael encryption algorithm
 Summary(pl.UTF-8):	Moduł Perla Crypt::Rijndael - algorytm szyfrowania Rijndael
 Name:		perl-Crypt-Rijndael
-Version:	1.11
-Release:	8
+Version:	1.13
+Release:	1
 License:	LGPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	c26594420342f4ccddc535b878962db9
+# Source0-md5:	2af117c9ab4052cec05cf6737c5f3f45
 Patch0:		%{name}-types.patch
 URL:		http://search.cpan.org/dist/Crypt-Rijndael/
 BuildRequires:	perl-devel >= 1:5.8.0
